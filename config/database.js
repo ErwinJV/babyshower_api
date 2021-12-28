@@ -14,11 +14,9 @@ module.exports = ({ env }) => ({
       ssl: {
         rejectUnauthorized: false
       },
-      options: {
-        ssl: config.host ? true : false,
-      },
+     
     },
-    debug: false,
+  
   },
 });
  
