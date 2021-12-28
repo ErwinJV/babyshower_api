@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "regalos",
+  "info": {
+    "singularName": "regalo",
+    "pluralName": "regalos",
+    "displayName": "regalo",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "url_image": {
+      "type": "string"
+    },
+    "imagen": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "enlace": {
+      "type": "string",
+      "regex": "https?:\\/\\/(www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b([-a-zA-Z0-9()@:%_\\+.~#?&//=]*)"
+    },
+    "apartado": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

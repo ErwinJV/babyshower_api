@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "invitados",
+  "info": {
+    "singularName": "invitado",
+    "pluralName": "invitados",
+    "displayName": "invitado",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "apellido": {
+      "type": "string"
+    },
+    "regalo": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::regalo.regalo"
+    },
+    "email": {
+      "type": "email"
+    }
+  }
+}
